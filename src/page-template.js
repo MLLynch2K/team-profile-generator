@@ -15,7 +15,7 @@ const generateManager = Manager => {
         </div>`
 }
 
-const generateManager = Sales => {
+const generateSales = Sales => {
     return `
             <div class="card shadow m-2 col-3">
                 <div class="card-header bg-primary ml-0 mt-1 rounded">
@@ -32,9 +32,9 @@ const generateManager = Sales => {
         </div>`
 }
 
-const generateEngineers = humanresourcesArr => {
+const generatehumanresources = humanresourcesArr => {
         return `
-        ${engineersArr
+        ${humanresourcesArr
         .map(({ name, id, email, github, role }) => {
             return `
             <div class="card shadow m-2 col-3">
@@ -55,7 +55,7 @@ const generateEngineers = humanresourcesArr => {
         .join('')}
         `}
 
-const generateInterns = tempArr => {
+const generateTemp = tempArr => {
         return `
         ${internsArr
             .map(({ name, id, email, school, role }) => {
