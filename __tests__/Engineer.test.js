@@ -1,6 +1,6 @@
-const Sales = require('../lib/Sales')
+const Sales = require('../lib/Engineer')
 
-test('creates an sales object', () => {
+test('creates an engineer object', () => {
     const employee = new Sales('Michele Lynch','46','michele.lynch8@yahoo.com','MLLynch2K');
     
     expect(employee.name).toBe('Michele Lynch');
@@ -10,14 +10,14 @@ test('creates an sales object', () => {
   });
 
 test("gets employee github", () => {
-    const employee = new Sales('Michele Lynch','46','michele.lynch8@yahoo.com', 'MLLynch2K');
+    const employee = new Engineer ('Michele Lynch','46','michele.lynch8@yahoo.com', 'MLLynch2K');
 
     expect(employee.getGithub()).toEqual(expect.stringContaining(employee.github));
   });
 
 
 test("gets employee role", () => {
-    const employee = new Sales('Michele Lynch','46','michele.lynch8@yahoo.com','MLLynch2K');
+    const employee = new Engineer ('Michele Lynch','46','michele.lynch8@yahoo.com','MLLynch2K');
 
     expect(employee.getRole()).toEqual(expect.stringContaining("Sales"));
   });

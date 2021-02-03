@@ -1,5 +1,5 @@
 # Team Profile Generator
-A command-line application that takes in information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.
+This will create a team portfolio with links to emails, GitHubs, and basic employee information. You may enter the manager, engineer, or an intern's information.
 
 ***
 ### Table of Contents  
@@ -11,8 +11,8 @@ A command-line application that takes in information about employees on a softwa
 6. [Questions]()  
 
 ***
-### Installation 
-Run npm install
+### Installation    
+npm install
 
 ***
 ### Screenshot  

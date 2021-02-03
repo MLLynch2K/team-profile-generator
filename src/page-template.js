@@ -15,26 +15,9 @@ const generateManager = Manager => {
         </div>`
 }
 
-const generateSales = Sales => {
-    return `
-            <div class="card shadow m-2 col-3">
-                <div class="card-header bg-primary ml-0 mt-1 rounded">
-                    <h2 class= "card-title">${Sales.name}</h2>
-                    <h5 class="card-text"><i class="fas fa-coffee"></i>&nbsp;${Sales.role}</h5>
-                </div>
-                <div class="card-body bg-light my-2">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">ID: ${Sales.id}</li>
-                        <li class="list-group-item">Email: <a href="mailto:${Sales.email}">${Sales.email}</a></li>
-                        <li class="list-group-item">Office number: ${Sales.officeNumber}</li>
-                    </ul>
-                </div>
-        </div>`
-}
-
-const generatehumanresources = humanresourcesArr => {
+const generateEngineers = engineersArr => {
         return `
-        ${humanresourcesArr
+        ${engineersArr
         .map(({ name, id, email, github, role }) => {
             return `
             <div class="card shadow m-2 col-3">
@@ -55,7 +38,7 @@ const generatehumanresources = humanresourcesArr => {
         .join('')}
         `}
 
-const generateTemp = tempArr => {
+const generateInterns = internsArr => {
         return `
         ${internsArr
             .map(({ name, id, email, school, role }) => {
@@ -81,7 +64,7 @@ const generateTemp = tempArr => {
 module.exports = templateData => {
 
     // destructure page data by section
-    const {managers, sales, humanresources, ...temp } = templateData;
+    const {interns, engineers, ...manager } = templateData;
   
     return `
     <!DOCTYPE html>
@@ -105,9 +88,8 @@ module.exports = templateData => {
       <main class="container my-5">
         <div class="row justify-content-center">
        ${generateManager(manager)}
-       ${generateEngineers(sales)}
-       ${generateEngineers(humanresources)}
-       ${generateInterns(temp)}
+       ${generateEngineers(engineers)}
+       ${generateInterns(interns)}
        </div>
       </main>
     </body>
