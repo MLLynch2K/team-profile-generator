@@ -21,7 +21,7 @@ node index.js
 
 ***
 ### Video Walk-Through   
-![Video Walk-Through](https://drive.google.com/file/d/1oVVFSbOe3KkbexyI07H8stAT3A-qwXTx/view?usp=sharing)
+(https://drive.google.com/file/d/1oVVFSbOe3KkbexyI07H8stAT3A-qwXTx/view?usp=sharing)
 
 ***
 ### Features  
