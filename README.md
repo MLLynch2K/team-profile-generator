@@ -13,6 +13,7 @@ This will create a team portfolio with links to emails, GitHubs, and basic emplo
 ***
 ### Installation    
 npm install
+node index.js
 
 ***
 ### Screenshot  
