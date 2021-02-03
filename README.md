@@ -17,11 +17,11 @@ node index.js
 
 ***
 ### Screenshot  
-![Homepage]()
+![Sample Team Profile HTML](images/samplehtml.png)
 
 ***
 ### Video Walk-Through   
-![Team Profile Generator Walk-through]()
+![Team Profile Generator Walk-through](https://drive.google.com/file/d/1oVVFSbOe3KkbexyI07H8stAT3A-qwXTx/view)
 
 ***
 ### Features  
